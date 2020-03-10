@@ -6,6 +6,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "bootstrap": "npx lerna bootstrap",
+    "build": "npx lerna run build --stream",
     "start": "npx lerna run start --stream",
     "dev": "npx lerna run start:dev --stream",
     "test": "npx lerna run test --stream",

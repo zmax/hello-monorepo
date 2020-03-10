@@ -1,12 +1,33 @@
 # hello-monorepo
 
-## Start
+## Install
+
 ```bash
-npx lerna bootstrap
-npx lerna run start:dev --stream
+yarn bootstrap
+```
+
+## Start
+
+```bash
+yarn build
+yarn start
+```
+
+## Development
+
+```bash
+yarn dev
 ```
 
 ## Test
+
 ```bash
-npx lerna run test
+yarn test
+```
+
+## E2E Test
+
+```bash
+yarn dev
+yarn e2e
 ```
