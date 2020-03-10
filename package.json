@@ -5,6 +5,12 @@
   "author": "Starck Lin <zenyer@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "npx lerna run start --stream",
+    "dev": "npx lerna run start:dev --stream",
+    "test": "npx lerna run test --stream",
+    "e2e": "npx lerna run test:e2e --stream"
+  },
   "workspaces": [
     "packages/nest",
     "packages/next"
