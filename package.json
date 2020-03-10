@@ -1,7 +1,6 @@
 {
-  "name": "hello-yarn-monorepo",
+  "name": "hello-monorepo",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Starck Lin <zenyer@gmail.com>",
   "license": "MIT",
   "private": true,
