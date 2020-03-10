@@ -20,23 +20,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - uses: borales/actions-yarn@v2.0.0
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - uses: borales/actions-yarn@v2.0.0
-      with: 
-        cmd: bootstrap
-    - uses: borales/actions-yarn@v2.0.0
-      with: 
-        cmd: build
-    - uses: borales/actions-yarn@v2.0.0
-      with: 
-        cmd: test
+    - run: yarn bootstrap
+    - run: yarn build
+    - run: yarn test
       env:
         CI: true
-    - uses: borales/actions-yarn@v2.0.0
-      with: 
-        cmd: e2e
+    - run: yarn e2e
       env:
         CI: true
