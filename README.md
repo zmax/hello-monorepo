@@ -1,4 +1,4 @@
-# hello-monorepo
+# Hello Monorepo
 
 ## Install
 
