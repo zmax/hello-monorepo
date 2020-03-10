@@ -19,4 +19,20 @@ describe('AppController', () => {
       expect(appController.getHello()).toBe('Hello World!');
     });
   });
+
+  describe('API: /todos', () => {
+    it('should return json', () => {
+      expect(appController.getAllTodos()).toEqual({
+        todos: [],
+        count: 0
+      });
+    });
+
+    it('should can be accumulated calls.', () => {
+      expect(appController.getAllTodos()).toEqual({
+        todos: [],
+        count: 1
+      });
+    });
+  })
 });
