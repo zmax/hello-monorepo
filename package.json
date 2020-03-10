@@ -6,9 +6,8 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/hello-react",
-    "packages/hello-nestjs",
-    "packages/hello-nextjs"
+    "packages/nest",
+    "packages/next"
   ],
   "devDependencies": {
     "lerna": "^3.20.2"
