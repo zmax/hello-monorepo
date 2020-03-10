@@ -8,5 +8,5 @@ npx lerna run start:dev
 
 ## Test
 ```bash
-npx lerna test
+npx lerna run test
 ```
