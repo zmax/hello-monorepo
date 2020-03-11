@@ -1,0 +1,17 @@
+{
+  "name": "@beyond/utils",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn run clean && tsc -p tsconfig.build.json",
+    "clean": "rimraf dist",
+    "prepublishOnly": "yarn run build"
+  },
+  "dependencies": {
+  }
+}

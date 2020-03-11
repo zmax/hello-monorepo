@@ -1,6 +1,13 @@
 {
+  "extends": "./tsconfig.build.json",
   "compilerOptions": {
+    "experimentalDecorators": true
+    // "baseUrl": "./packages",
     // "paths": {
+    //   "@nestjs/common": ["backend/node_modules/@nestjs/common"],
+    //   "@beyond/events": ["events-module"],
+    //   "@nestjs/platform-ws": ["events-module/node_modules/@nestjs/platform-ws"],
+    //   "@beyond/utils": ["utils"]
     // }
   }
 }

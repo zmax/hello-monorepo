@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "bootstrap": "npx lerna bootstrap",
+    "bootstrap": "npx lerna bootstrap --hoist",
     "build": "npx lerna run build --stream",
     "start": "npx lerna run start --stream",
     "dev": "npx lerna run start:dev --stream",
@@ -17,6 +17,7 @@
     "packages/fontend"
   ],
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "lerna": "^3.20.2",
+    "typescript": "^3.8.3"
   }
 }
