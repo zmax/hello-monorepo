@@ -13,8 +13,8 @@
     "e2e": "npx lerna run test:e2e --stream"
   },
   "workspaces": [
-    "packages/nest",
-    "packages/next"
+    "packages/backend",
+    "packages/fontend"
   ],
   "devDependencies": {
     "lerna": "^3.20.2"
