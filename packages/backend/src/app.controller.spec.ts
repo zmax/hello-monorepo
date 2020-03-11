@@ -24,14 +24,14 @@ describe('AppController', () => {
     it('should return json', () => {
       expect(appController.getAllTodos()).toEqual({
         todos: [],
-        count: 0
+        count: 1
       });
     });
 
     it('should can be accumulated calls.', () => {
       expect(appController.getAllTodos()).toEqual({
         todos: [],
-        count: 1
+        count: 2
       });
     });
   })

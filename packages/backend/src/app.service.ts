@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { UniqleIndex } from '@beyond/utils';
+import { getUniqleNumber } from '@beyond/utils';
 
 @Injectable()
 export class AppService {
@@ -17,7 +17,7 @@ export class AppService {
    * @memberof AppService
    */
   getCount(): number {
-    return UniqleIndex.index();
+    return getUniqleNumber();
   }
   
 }
