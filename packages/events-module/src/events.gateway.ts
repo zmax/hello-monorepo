@@ -17,7 +17,7 @@ import { /* dd, */ dump } from 'dumper.js';
 import { IncomingMessage } from 'http';
 import { use, delegate } from 'typescript-mix';
 import { v4 as uuid } from 'uuid';
-import { UniqleIndex } from '@beyond/utils';
+import { getUniqleNumber } from '@beyond/utils';
 
 /* Helper functions */
 const getPlayerUID = () => this._id;
@@ -109,7 +109,7 @@ export class EventsGateway implements OnGatewayInit, OnGatewayConnection, OnGate
   handleConnection(client: Socket, request: IncomingMessage): any {
     const newPlayer = new Player();
     newPlayer.uuid = uuid();
-    newPlayer.id = UniqleIndex.index;
+    newPlayer.id = getUniqleNumber();
     newPlayer.socket = client;
     newPlayer.request = request;
     
